@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>Introduction to Document Object Model</h1>
+    <p id="definition">
+      DOM represents the structure of a document as a tree-like data structure,
+      where each node represents an element, attribute, or piece of text. The
+      DOM allows developers to interact with and manipulate the content,
+      structure, and style of a document dynamically, using programming
+      languages like JavaScript. It's a crucial concept in web development,
+      enabling tasks like
+    </p>
+    <h3>DOM Selectors</h3>
+    <ul>
+        <li class="ola">querySelector</li>
+        <li class="ola">getElementById</li>
+        <li class="ola">querySelectorAll</li>
+        <li class="ola">getElementsByClassName</li>
+        <li class="ola">getElementsByTagName</li>
+    </ul>
+
+    <p><b>querySelector():</b>
+        
+    </p>
+    <button id="btn">Click me</button>
+
+    <p id="intro"> Hello, World</p>
+
+
+    <script>
+        const list = document.querySelector("li");
+        console.log(list);
+
+        const p = document.getElementById("definition");
+        console.log(p);
+
+        const classList = document.getElementsByClassName("ola");
+        console.log(classList);
+
+        const listTag = document.getElementsByTagName("li")
+        console.log(listTag);
+
+        const id = document.getElementById("intro");
+        id.style.color = "tomato";
+        console.log(id);
+
+        const btn = document.getElementById("btn")
+        function greet(){
+            return alert("Hello Everybody");
+        }
+        btn.addEventListener("click", greet)
+
+    </script>
+  </body>
+</html>
